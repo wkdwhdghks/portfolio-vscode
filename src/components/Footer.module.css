@@ -1,5 +1,64 @@
-.div {
+.container {
   height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 8px;
   background-color: #24292e;
   border-top: 1px solid #1b1f23;
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+}
+
+.leftContainer,
+.rightContainer {
+  display: flex;
+}
+
+.gitContainer,
+.errorContainer,
+.warningContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  font-size: 13px;
+}
+
+.gitContainer,
+.errorContainer {
+  margin-right: 8px;
+}
+
+.git,
+.error,
+.warning {
+  margin-right: 4px;
+}
+
+.reactContainer,
+.prettierContainer {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin-right: 8px;
+}
+
+.react {
+  color: #00bcd4;
+}
+
+.react,
+.prettier {
+  margin-right: 4px;
+}
+
+.bellContainer {
+  display: flex;
+  align-items: center;
+}
+
+.bell {
+  margin-left: 8px;
+  font-size: 13px;
 }
