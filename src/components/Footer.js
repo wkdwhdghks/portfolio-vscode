@@ -8,21 +8,26 @@ const rightIcons = [VscBroadcast, VscCheck];
 
 const leftItems = [
   {
+    id: 0,
     item: "main",
   },
   {
+    id: 1,
     item: "0",
   },
   {
+    id: 2,
     item: "0",
   },
 ];
 
 const rightItems = [
   {
+    id: 0,
     item: "Go Live",
   },
   {
+    id: 1,
     item: "Prettier",
   },
 ];
@@ -34,7 +39,7 @@ function Footer() {
         {leftItems.map((item, index) => {
           const Icon = leftIcons[index];
           return (
-            <div className={styles.leftItemContainer}>
+            <div key={item.id} className={styles.leftItemContainer}>
               <Icon className={styles.icon} />
               {item.item}
             </div>
@@ -46,7 +51,7 @@ function Footer() {
         {rightItems.map((item, index) => {
           const Icon = rightIcons[index];
           return (
-            <div className={styles.rightItemContainer}>
+            <div key={item.id} className={styles.rightItemContainer}>
               <Icon className={styles.icon} />
               {item.item}
             </div>

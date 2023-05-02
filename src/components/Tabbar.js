@@ -5,29 +5,47 @@ import { IoLogoJavascript } from "react-icons/io";
 import { VscJson } from "react-icons/vsc";
 import styles from "./Tabbar.module.css";
 
+const icons = [FaReact, AiFillHtml5, RiCss3Fill, IoLogoJavascript, VscJson];
+const items = [
+  {
+    id: 0,
+    item: "home.jsx",
+    color: "#00bcd4",
+  },
+  {
+    id: 1,
+    item: "about.html",
+    color: "#e44d26",
+  },
+  {
+    id: 2,
+    item: "contact.css",
+    color: "#42a5f5",
+  },
+  {
+    id: 3,
+    item: "projects.js",
+    color: "#ffca28",
+  },
+  {
+    id: 4,
+    item: "blog.json",
+    color: "#fbc02d",
+  },
+];
+
 function Tabbar() {
   return (
     <div className={styles.container}>
-      <div className={styles.menuContainer}>
-        <FaReact className={styles.react} />
-        <p>home.jsx</p>
-      </div>
-      <div className={styles.menuContainer}>
-        <AiFillHtml5 className={styles.html} />
-        <p>about.html</p>
-      </div>
-      <div className={styles.menuContainer}>
-        <RiCss3Fill className={styles.css} />
-        <p>contact.css</p>
-      </div>
-      <div className={styles.menuContainer}>
-        <IoLogoJavascript className={styles.js} />
-        <p>projects.js</p>
-      </div>
-      <div className={styles.menuContainer}>
-        <VscJson className={styles.json} />
-        <p>blog.json</p>
-      </div>
+      {items.map((item, index) => {
+        const Icon = icons[index];
+        return (
+          <div key={item.id} className={styles.menuContainer}>
+            <Icon style={{ color: item.color }} className={styles.icon} />
+            {item.item}
+          </div>
+        );
+      })}
     </div>
   );
 }

@@ -16,31 +16,7 @@
   border-right: 1px solid #24292e;
 }
 
-.react {
-  color: #00bcd4;
-}
-
-.html {
-  color: #e44d26;
-}
-
-.css {
-  color: #42a5f5;
-}
-
-.js {
-  color: #ffca28;
-}
-
-.json {
-  color: #fbc02d;
-}
-
-.react,
-.html,
-.css,
-.js,
-.json {
+.icon {
   font-size: 18px;
   margin-right: 6px;
 }
