@@ -16,40 +16,21 @@
   display: flex;
 }
 
-.gitContainer,
-.errorContainer,
-.warningContainer {
+.leftItemContainer {
   display: flex;
   align-items: center;
   margin-right: 8px;
   font-size: 13px;
 }
 
-.gitContainer,
-.errorContainer {
-  margin-right: 8px;
-}
-
-.git,
-.error,
-.warning {
-  margin-right: 4px;
-}
-
-.reactContainer,
-.prettierContainer {
+.rightItemContainer {
   display: flex;
   align-items: center;
   font-size: 13px;
   margin-right: 8px;
 }
 
-.react {
-  color: #00bcd4;
-}
-
-.react,
-.prettier {
+.icon {
   margin-right: 4px;
 }
 

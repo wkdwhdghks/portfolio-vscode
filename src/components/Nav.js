@@ -18,14 +18,14 @@ function Nav() {
       <div className={styles.menuTop}>
         {iconsTop.map((item, index) => {
           const Icon = iconsTop[index];
-          return <Icon className={styles.icon} />;
+          return <Icon key={index} className={styles.icon} />;
         })}
       </div>
 
       <div className={styles.menuBottom}>
         {iconsBottom.map((item, index) => {
           const Icon = iconsBottom[index];
-          return <Icon className={styles.icon} />;
+          return <Icon key={index} className={styles.icon} />;
         })}
       </div>
     </nav>

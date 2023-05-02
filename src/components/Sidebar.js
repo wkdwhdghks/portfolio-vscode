@@ -70,7 +70,7 @@ function Sidebar() {
         menus.map((menu, index) => {
           const Icon = icons[index];
           return (
-            <div className={styles.menu}>
+            <div key={index} className={styles.menu}>
               <Icon style={{ color: menu.color }} className={styles.icon} />
               <span>{menu.item}</span>
             </div>
