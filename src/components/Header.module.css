@@ -1,0 +1,48 @@
+.container {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 8px;
+  background-color: #1f2428;
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.vscodeIcon {
+  margin-right: 8px;
+  color: #1d94e4;
+  font-size: 17px;
+}
+
+.menu li {
+  margin: 0px 8px;
+}
+
+.circle {
+  display: flex;
+}
+
+.circle li {
+  display: flex;
+  align-items: center;
+  margin-left: 6px;
+  font-size: 13px;
+  color: #f4be4f;
+  cursor: pointer;
+}
+
+.circle li:first-child {
+  color: #ec6a5e;
+}
+
+.circle li:last-child {
+  color: #61c555;
+}
