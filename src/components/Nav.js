@@ -9,20 +9,24 @@ import {
 } from "react-icons/vsc";
 import styles from "./Nav.module.css";
 
+const iconsTop = [VscFiles, VscCode, VscEdit, VscMail, VscExtensions];
+const iconsBottom = [VscAccount, VscSettingsGear];
+
 function Nav() {
   return (
     <nav className={styles.container}>
       <div className={styles.menuTop}>
-        <VscFiles className={styles.icon} />
-        <VscCode className={styles.icon} />
-        <VscEdit className={styles.icon} />
-        <VscMail className={styles.icon} />
-        <VscExtensions className={styles.icon} />
+        {iconsTop.map((item, index) => {
+          const Icon = iconsTop[index];
+          return <Icon className={styles.icon} />;
+        })}
       </div>
 
       <div className={styles.menuBottom}>
-        <VscAccount className={styles.icon} />
-        <VscSettingsGear className={styles.icon} />
+        {iconsBottom.map((item, index) => {
+          const Icon = iconsBottom[index];
+          return <Icon className={styles.icon} />;
+        })}
       </div>
     </nav>
   );
