@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 
 function Header() {
   return (
-    <div className={styles.container}>
+    <header className={styles.container}>
       <ul className={styles.menu}>
         <SiVisualstudiocode className={styles.vscodeIcon} />
         <li>File</li>
@@ -29,7 +29,7 @@ function Header() {
           <BsFillCircleFill />
         </li>
       </ul>
-    </div>
+    </header>
   );
 }
 

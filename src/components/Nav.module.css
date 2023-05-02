@@ -1,0 +1,28 @@
+.container {
+  width: 56px;
+  height: calc(100vh - 57px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #24292e;
+}
+
+.menuTop,
+.menuBottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuTop button,
+.menuBottom button {
+  height: 56px;
+  border: none;
+  font-size: 26px;
+  background-color: #24292e;
+  color: #6a737d;
+}
+
+.menuTop button:hover,
+.menuBottom button:hover {
+  color: #ffffff;
+}
