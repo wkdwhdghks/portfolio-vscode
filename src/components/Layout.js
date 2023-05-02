@@ -3,16 +3,20 @@ import Header from "./Header";
 import Nav from "./Nav";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
-import styels from "./Layout.module.css";
+import Tabbar from "./Tabbar";
+import styles from "./Layout.module.css";
 
 function Layout() {
   return (
     <div>
       <Header />
-      <div className={styels.container}>
+      <div className={styles.container}>
         <Nav />
         <Sidebar />
-        <Outlet />
+        <div>
+          <Tabbar />
+          <Outlet />
+        </div>
       </div>
       <Footer />
     </div>

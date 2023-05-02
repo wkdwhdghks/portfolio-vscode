@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  background-color: #1f2428;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-left: 1px solid #24292e;
+  border-right: 1px solid #24292e;
+}
+
+.react {
+  color: #00bcd4;
+}
+
+.html {
+  color: #e44d26;
+}
+
+.css {
+  color: #42a5f5;
+}
+
+.js {
+  color: #ffca28;
+}
+
+.json {
+  color: #fbc02d;
+}
+
+.react,
+.html,
+.css,
+.js,
+.json {
+  font-size: 18px;
+  margin-right: 6px;
+}
