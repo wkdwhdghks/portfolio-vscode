@@ -8,31 +8,31 @@
   font-weight: 300;
 }
 
-.p {
+.title {
   padding: 8px 0px 0px 8px;
   margin-bottom: 20px;
 }
 
-.arrowContainer {
+.dropDown {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.arrowContainer span {
+.dropDown span {
   font-weight: 400;
 }
 
-.arrow {
+.arrowDown {
   transition: all 0.5s;
 }
 
-.null {
+.arrowRight {
   transform: rotate(-90deg);
   transition: all 0.5s;
 }
 
-.menuContainer {
+.menu {
   display: flex;
   align-items: center;
   margin-bottom: 4px;
@@ -40,49 +40,10 @@
   font-size: 14px;
 }
 
-.menuContainer:hover {
+.menu:hover {
   background-color: #24292e;
 }
 
-.react {
-  color: #00bcd4;
-  font-size: 16px;
-}
-
-.html {
-  color: #e44d26;
-  font-size: 16px;
-}
-
-.css {
-  color: #42a5f5;
-  font-size: 16px;
-}
-
-.js {
-  color: #ffca28;
-  font-size: 16px;
-}
-
-.json {
-  color: #fbc02d;
-  font-size: 16px;
-}
-
-.readme {
-  color: #3f9de9;
-  font-size: 16px;
-}
-
-.react,
-.html,
-.css,
-.js,
-.json,
-.readme {
+.icon {
   margin-right: 6px;
-}
-
-.a {
-  background-color: #24292e;
 }

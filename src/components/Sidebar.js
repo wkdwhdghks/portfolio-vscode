@@ -8,52 +8,74 @@ import { VscJson } from "react-icons/vsc";
 import { AiFillExclamationCircle } from "react-icons/ai";
 import styles from "./Sidebar.module.css";
 
+const icons = [
+  FaReact,
+  AiFillHtml5,
+  RiCss3Fill,
+  IoLogoJavascript,
+  VscJson,
+  AiFillExclamationCircle,
+];
+
+const menus = [
+  {
+    id: 1,
+    item: "home.jsx",
+    color: "#00bcd4",
+  },
+  {
+    id: 2,
+    item: "about.html",
+    color: "#e44d26",
+  },
+  {
+    id: 3,
+    item: "contact.css",
+    color: "#42a5f5",
+  },
+  {
+    id: 4,
+    item: "projects.js",
+    color: "#ffca28",
+  },
+  {
+    id: 5,
+    item: "blog.json",
+    color: "#fbc02d",
+  },
+  {
+    id: 6,
+    item: "README.md",
+    color: "#3f9de9",
+  },
+];
+
 function Sidebar() {
   const [toggle, setToggle] = useState(true);
-  const [className, setClassName] = useState(false);
 
   const handleClick = () => setToggle(!toggle);
-  const handleClassToggle = () => setClassName(!className);
 
   return (
     <div className={styles.container}>
-      <p className={styles.p}>EXPLORER</p>
+      <p className={styles.title}>EXPLORER</p>
 
-      <div className={styles.arrowContainer} onClick={handleClick}>
-        <IoIosArrowDown className={toggle ? styles.arrow : styles.null} />
+      <div className={styles.dropDown} onClick={handleClick}>
+        <IoIosArrowDown
+          className={toggle ? styles.arrowDown : styles.arrowRight}
+        />
         <span>PORTFOLIO</span>
       </div>
 
-      {toggle && (
-        <div>
-          <div
-            className={`${styles.menuContainer} ${className ? "" : styles.a}`}
-          >
-            <FaReact className={styles.react} />
-            <p>home.jsx</p>
-          </div>
-          <div className={styles.menuContainer}>
-            <AiFillHtml5 className={styles.html} />
-            <p>about.html</p>
-          </div>
-          <div className={styles.menuContainer}>
-            <RiCss3Fill className={styles.css} />
-            <p>contact.css</p>
-          </div>
-          <div className={styles.menuContainer}>
-            <IoLogoJavascript className={styles.js} />
-            <p>projects.js</p>
-          </div>
-          <div className={styles.menuContainer}>
-            <VscJson className={styles.json} />
-            <p>blog.json</p>
-          </div>
-          <div className={styles.menuContainer}>
-            <AiFillExclamationCircle className={styles.readme} />
-            <p>README.md</p>
-          </div>
-        </div>
-      )}
+      {toggle &&
+        menus.map((menu, index) => {
+          const Icon = icons[index];
+          return (
+            <div className={styles.menu}>
+              <Icon style={{ color: menu.color }} className={styles.icon} />
+              <span>{menu.item}</span>
+            </div>
+          );
+        })}
     </div>
   );
 }
