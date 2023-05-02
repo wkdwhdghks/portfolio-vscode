@@ -10,25 +10,25 @@ import styles from "./Sidebar.module.css";
 
 function Sidebar() {
   const [toggle, setToggle] = useState(true);
-  const [className, setClassName] = useState(true);
+  const [className, setClassName] = useState(false);
 
-  const handleClick = () => {
-    setToggle(!toggle);
-    setClassName(!className);
-  };
+  const handleClick = () => setToggle(!toggle);
+  const handleClassToggle = () => setClassName(!className);
 
   return (
     <div className={styles.container}>
       <p className={styles.p}>EXPLORER</p>
 
       <div className={styles.arrowContainer} onClick={handleClick}>
-        <IoIosArrowDown className={className ? styles.arrow : styles.null} />
+        <IoIosArrowDown className={toggle ? styles.arrow : styles.null} />
         <span>PORTFOLIO</span>
       </div>
 
       {toggle && (
         <div>
-          <div className={styles.menuContainer}>
+          <div
+            className={`${styles.menuContainer} ${className ? "" : styles.a}`}
+          >
             <FaReact className={styles.react} />
             <p>home.jsx</p>
           </div>

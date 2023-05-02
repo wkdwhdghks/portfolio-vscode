@@ -13,30 +13,16 @@ function Nav() {
   return (
     <nav className={styles.container}>
       <div className={styles.menuTop}>
-        <button>
-          <VscFiles />
-        </button>
-        <button>
-          <VscCode />
-        </button>
-        <button>
-          <VscEdit />
-        </button>
-        <button>
-          <VscMail />
-        </button>
-        <button>
-          <VscExtensions />
-        </button>
+        <VscFiles className={styles.icon} />
+        <VscCode className={styles.icon} />
+        <VscEdit className={styles.icon} />
+        <VscMail className={styles.icon} />
+        <VscExtensions className={styles.icon} />
       </div>
 
       <div className={styles.menuBottom}>
-        <button>
-          <VscAccount />
-        </button>
-        <button>
-          <VscSettingsGear />
-        </button>
+        <VscAccount className={styles.icon} />
+        <VscSettingsGear className={styles.icon} />
       </div>
     </nav>
   );

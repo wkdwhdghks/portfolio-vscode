@@ -1,8 +1,8 @@
 .container {
   width: 172px;
   background-color: #1f2428;
-  border-left: 1px solid #1b1f23;
-  border-right: 1px solid #1b1f23;
+  border-left: 1px solid #161a1d;
+  border-right: 1px solid #161a1d;
   color: #ffffff;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
@@ -81,4 +81,8 @@
 .json,
 .readme {
   margin-right: 6px;
+}
+
+.a {
+  background-color: #24292e;
 }

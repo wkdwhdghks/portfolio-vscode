@@ -11,18 +11,16 @@
 .menuBottom {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.menuTop button,
-.menuBottom button {
+.icon {
   height: 56px;
-  border: none;
   font-size: 26px;
   background-color: #24292e;
   color: #6a737d;
 }
 
-.menuTop button:hover,
-.menuBottom button:hover {
+.icon:hover {
   color: #ffffff;
 }
