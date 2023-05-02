@@ -1,0 +1,84 @@
+.container {
+  width: 172px;
+  background-color: #1f2428;
+  border-left: 1px solid #1b1f23;
+  border-right: 1px solid #1b1f23;
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+}
+
+.p {
+  padding: 8px 0px 0px 8px;
+  margin-bottom: 20px;
+}
+
+.arrowContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.arrowContainer span {
+  font-weight: 400;
+}
+
+.arrow {
+  transition: all 0.5s;
+}
+
+.null {
+  transform: rotate(-90deg);
+  transition: all 0.5s;
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  padding: 2px 8px;
+  font-size: 14px;
+}
+
+.menuContainer:hover {
+  background-color: #24292e;
+}
+
+.react {
+  color: #00bcd4;
+  font-size: 16px;
+}
+
+.html {
+  color: #e44d26;
+  font-size: 16px;
+}
+
+.css {
+  color: #42a5f5;
+  font-size: 16px;
+}
+
+.js {
+  color: #ffca28;
+  font-size: 16px;
+}
+
+.json {
+  color: #fbc02d;
+  font-size: 16px;
+}
+
+.readme {
+  color: #3f9de9;
+  font-size: 16px;
+}
+
+.react,
+.html,
+.css,
+.js,
+.json,
+.readme {
+  margin-right: 6px;
+}
