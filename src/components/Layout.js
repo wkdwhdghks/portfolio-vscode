@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Nav from "./Nav";
@@ -5,10 +6,9 @@ import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 import Tabbar from "./Tabbar";
 import styles from "./Layout.module.css";
-import { useState } from "react";
 
 function Layout() {
-  const [select, setSelect] = useState("");
+  const [select, setSelect] = useState("/");
   const handleClick = (path) => setSelect(path);
 
   return (

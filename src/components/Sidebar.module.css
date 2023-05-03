@@ -1,6 +1,6 @@
 .container {
   width: 172px;
-  background-color: #1f2428;
+  background-color: var(--main-bg);
   border-left: 1px solid #161a1d;
   border-right: 1px solid #161a1d;
   color: #ffffff;
@@ -42,7 +42,7 @@
 }
 
 .menu:hover {
-  background-color: #24292e;
+  background-color: var(--secondary-bg);
 }
 
 .icon {
@@ -50,7 +50,7 @@
 }
 
 .select {
-  background-color: #24292e;
+  background-color: var(--secondary-bg);
 }
 
 a {

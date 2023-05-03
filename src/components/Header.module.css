@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 8px;
-  background-color: #1f2428;
+  background-color: var(--main-bg);
   color: #ffffff;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;

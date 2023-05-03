@@ -1,0 +1,11 @@
+/* GitHub Dark */
+:root {
+  --main-bg: #1f2428;
+  --secondary-bg: #24292e;
+}
+
+/* Dracula */
+html.dark {
+  --color-main-bg: #282a36;
+  --color-secondary-bg: #21222c;
+}
