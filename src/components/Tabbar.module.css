@@ -12,19 +12,19 @@
   display: flex;
   align-items: center;
   padding: 8px 16px;
-  border-left: 1px solid #24292e;
-  border-right: 1px solid #24292e;
   color: #ffffff;
+  border-right: 1px solid var(--tab-boder);
+  border-bottom: 1px solid var(--tab-boder);
 }
 
 .icon {
-  font-size: 18px;
   margin-right: 6px;
+  font-size: 18px;
 }
 
 .select {
-  border-top: 1px solid #f9826c;
   background-color: var(--secondary-bg);
+  border-top: 1px solid var(--accent-color);
 }
 
 a {

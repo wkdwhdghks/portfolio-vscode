@@ -2,10 +2,18 @@
 :root {
   --main-bg: #1f2428;
   --secondary-bg: #24292e;
+  --tab-boder: #24292e;
+  --footer-bg: #24292e;
+  --accent-color: #f9826c;
+  --button-bg: #176f2c;
 }
 
 /* Dracula */
-html.dark {
-  --color-main-bg: #282a36;
-  --color-secondary-bg: #21222c;
+html.theme {
+  --main-bg: #21222c;
+  --secondary-bg: #282a36;
+  --tab-boder: #191a21;
+  --footer-bg: #21222c;
+  --accent-color: #bd93f9;
+  --button-bg: #44475a;
 }

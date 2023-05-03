@@ -16,7 +16,7 @@ function Header() {
         <li>Help</li>
       </ul>
 
-      <p>Jonghwan Jang - Visual Studio Code</p>
+      <p className={styles.title}>Jonghwan Jang - Visual Studio Code</p>
 
       <ul className={styles.circle}>
         <li>

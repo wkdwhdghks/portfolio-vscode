@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Nav from "./Nav";
@@ -8,8 +8,16 @@ import Tabbar from "./Tabbar";
 import styles from "./Layout.module.css";
 
 function Layout() {
-  const [select, setSelect] = useState("/");
-  const handleClick = (path) => setSelect(path);
+  const [select, setSelect] = useState("");
+
+  const handleClick = (path) => {
+    setSelect(path);
+    localStorage.setItem("path", path);
+  };
+
+  useEffect(() => {
+    setSelect(localStorage.getItem("path"));
+  }, []);
 
   return (
     <div>

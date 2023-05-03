@@ -1,6 +1,6 @@
 .container {
   width: 56px;
-  height: calc(100vh - 57px);
+  height: calc(100vh - (31px + 26px));
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16,9 +16,9 @@
 
 .icon {
   height: 56px;
-  font-size: 26px;
-  background-color: var(--secondary-bg);
   color: #6a737d;
+  background-color: var(--secondary-bg);
+  font-size: 26px;
 }
 
 .icon:hover {
@@ -27,4 +27,10 @@
 
 .select {
   color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 0px;
+  }
 }

@@ -1,16 +1,16 @@
 .container {
   width: 172px;
-  background-color: var(--main-bg);
-  border-left: 1px solid #161a1d;
-  border-right: 1px solid #161a1d;
   color: #ffffff;
+  background-color: var(--main-bg);
+  border-right: 1px solid #161a1d;
+  border-left: 1px solid #161a1d;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
 }
 
 .title {
-  padding: 8px 0px 0px 8px;
   margin-bottom: 20px;
+  padding: 8px 0px 0px 8px;
 }
 
 .dropDown {
@@ -37,8 +37,8 @@
   align-items: center;
   margin-bottom: 4px;
   padding: 2px 8px;
-  font-size: 14px;
   color: #ffffff;
+  font-size: 14px;
 }
 
 .menu:hover {
@@ -55,4 +55,11 @@
 
 a {
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 0px;
+    border-right: 0px;
+  }
 }
