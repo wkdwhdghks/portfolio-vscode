@@ -5,16 +5,20 @@ import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 import Tabbar from "./Tabbar";
 import styles from "./Layout.module.css";
+import { useState } from "react";
 
 function Layout() {
+  const [select, setSelect] = useState("");
+  const handleClick = (path) => setSelect(path);
+
   return (
     <div>
       <Header />
       <div className={styles.container}>
-        <Nav />
-        <Sidebar />
+        <Nav select={select} handleClick={handleClick} />
+        <Sidebar select={select} handleClick={handleClick} />
         <div>
-          <Tabbar />
+          <Tabbar select={select} handleClick={handleClick} />
           <Outlet />
         </div>
       </div>

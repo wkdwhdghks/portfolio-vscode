@@ -38,6 +38,7 @@
   margin-bottom: 4px;
   padding: 2px 8px;
   font-size: 14px;
+  color: #ffffff;
 }
 
 .menu:hover {
@@ -48,6 +49,10 @@
   margin-right: 6px;
 }
 
-.active {
+.select {
   background-color: #24292e;
+}
+
+a {
+  text-decoration: none;
 }

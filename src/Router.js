@@ -5,6 +5,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Project from "./pages/Projects";
 import Blog from "./pages/Blog";
+import Readme from "./pages/Readme";
+import Setting from "./pages/Setting";
 
 function Router() {
   return (
@@ -16,6 +18,8 @@ function Router() {
           <Route path="contact" element={<Contact />} />
           <Route path="projects" element={<Project />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="readme" element={<Readme />} />
+          <Route path="setting" element={<Setting />} />
         </Route>
       </Routes>
     </BrowserRouter>
