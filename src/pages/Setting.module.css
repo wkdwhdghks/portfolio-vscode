@@ -1,6 +1,6 @@
 .container {
   width: calc(100vw - (172px + 56px + 64px));
-  height: calc(100vh - (31px + 35px + 26px + 64px));
+  height: calc(100vh - (31px + 36px + 26px + 64px));
   padding: 32px;
   color: #ffffff;
   background-color: var(--secondary-bg);
@@ -64,7 +64,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .container {
     width: calc(100vw - (56px + 64px));
   }

@@ -27,7 +27,7 @@ function Layout() {
         <Sidebar select={select} handleClick={handleClick} />
         <div>
           <Tabbar select={select} handleClick={handleClick} />
-          <Outlet />
+          <Outlet context={{ handleClick }} />
         </div>
       </div>
       <Footer />
