@@ -47,3 +47,7 @@
 .icon {
   margin-right: 6px;
 }
+
+.active {
+  background-color: #24292e;
+}

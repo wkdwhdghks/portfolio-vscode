@@ -19,58 +19,65 @@ const icons = [
 
 const menus = [
   {
-    id: 1,
+    id: 0,
     item: "home.jsx",
     color: "#00bcd4",
   },
   {
-    id: 2,
+    id: 1,
     item: "about.html",
     color: "#e44d26",
   },
   {
-    id: 3,
+    id: 2,
     item: "contact.css",
     color: "#42a5f5",
   },
   {
-    id: 4,
+    id: 3,
     item: "projects.js",
     color: "#ffca28",
   },
   {
-    id: 5,
+    id: 4,
     item: "blog.json",
     color: "#fbc02d",
   },
   {
-    id: 6,
+    id: 5,
     item: "README.md",
     color: "#3f9de9",
   },
 ];
 
 function Sidebar() {
-  const [toggle, setToggle] = useState(true);
+  const [dropDownToggle, setDropDownToggle] = useState(true);
+  const [select, setSelect] = useState("");
 
-  const handleClick = () => setToggle(!toggle);
+  const handleDropDownClick = () => setDropDownToggle(!dropDownToggle);
+  const handleMenuClick = (id) => setSelect(id);
 
   return (
     <div className={styles.container}>
       <p className={styles.title}>EXPLORER</p>
-
-      <div className={styles.dropDown} onClick={handleClick}>
+      <div className={styles.dropDown} onClick={handleDropDownClick}>
         <IoIosArrowDown
-          className={toggle ? styles.arrowDown : styles.arrowRight}
+          className={dropDownToggle ? styles.arrowDown : styles.arrowRight}
         />
         <span>PORTFOLIO</span>
       </div>
 
-      {toggle &&
+      {dropDownToggle &&
         menus.map((menu, index) => {
           const Icon = icons[index];
           return (
-            <div key={index} className={styles.menu}>
+            <div
+              key={index}
+              className={`${styles.menu} ${
+                select === menu.id ? styles.active : ""
+              }`}
+              onClick={() => handleMenuClick(menu.id)}
+            >
               <Icon style={{ color: menu.color }} className={styles.icon} />
               <span>{menu.item}</span>
             </div>
