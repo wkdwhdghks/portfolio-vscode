@@ -6,6 +6,10 @@
   --footer-bg: #24292e;
   --accent-color: #f9826c;
   --button-bg: #176f2c;
+  --tagname-text-color: #9de6a4;
+  --attributename-text-color: #ae93ea;
+  --attributevalue-text-color: #a3c6f4;
+  --scrollbar-bg: #333536;
 }
 
 /* Dracula */
@@ -16,4 +20,8 @@ html.theme {
   --footer-bg: #21222c;
   --accent-color: #bd93f9;
   --button-bg: #44475a;
+  --tagname-text-color: #cd72ab;
+  --attributename-text-color: #85f789;
+  --attributevalue-text-color: #f2f999;
+  --scrollbar-bg: #454647;
 }

@@ -1,0 +1,24 @@
+.codeblock {
+  width: calc(100% - 72px);
+  height: calc(100vh - 31px - 36px - 26px - 72px);
+  padding: 36px;
+  counter-reset: line;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.codeblock a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.codeblock a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .codeblock {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+  }
+}
