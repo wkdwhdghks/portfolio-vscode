@@ -295,7 +295,7 @@ function About() {
         <CodeLine />
         <CodeLine>
           <TagContents indent={5}>
-            <p className={styles.accent}>👩‍🎓 교육</p>
+            <p className={styles.accent}>👨🏻‍🎓 교육</p>
           </TagContents>
         </CodeLine>
         <CodeLine />
