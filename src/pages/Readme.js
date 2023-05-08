@@ -1,5 +1,5 @@
 function Readme() {
-  return <div>Readme</div>;
+  return <div>Comming Soon!</div>;
 }
 
 export default Readme;

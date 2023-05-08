@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import Header from "./Header";
 import Nav from "./Nav";
 import Sidebar from "./Sidebar";
@@ -9,6 +9,7 @@ import styles from "./Layout.module.css";
 
 function Layout() {
   const [select, setSelect] = useState("");
+  const navigate = useNavigate();
 
   const handleClick = (path) => {
     setSelect(path);
@@ -16,8 +17,15 @@ function Layout() {
   };
 
   useEffect(() => {
-    setSelect(localStorage.getItem("path"));
-  }, []);
+    if (localStorage.getItem("path") === null) {
+      setSelect("/");
+      navigate("/");
+    } else {
+      const path = localStorage.getItem("path");
+      setSelect(path);
+      navigate(path);
+    }
+  }, [navigate]);
 
   return (
     <div>
