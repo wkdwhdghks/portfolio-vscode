@@ -1,14 +1,14 @@
 .container {
-  width: calc(100vw - (57px + 171px));
-  height: calc(100% - 36px);
+  width: calc(100vw - (56px + 172px));
+  height: calc(100vh - (30px + 35px + 25px));
   background-color: var(--secondary-bg);
   color: #ffffff;
   font-family: "JetBrains Mono", monospace;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 14px;
 }
 
 ::-webkit-scrollbar-track {
@@ -32,14 +32,14 @@
   font-style: italic;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 800px) {
   .container {
-    width: calc(100vw - 57px);
+    height: calc(100vh - (30px + 50px + 25px));
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .container {
-    width: 100vw;
+    width: calc(100vw - 56px);
   }
 }

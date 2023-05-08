@@ -36,7 +36,7 @@ function Setting() {
               src={`/images/${item.img}`}
               alt="theme-img"
               className={styles.img}
-            ></img>
+            />
             <p className={styles.name}>{item.name}</p>
             <p className={styles.publisher}>{item.publisher}</p>
             <button

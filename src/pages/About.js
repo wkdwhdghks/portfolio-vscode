@@ -85,8 +85,8 @@ function About() {
             새롭게 배운 기술을 업무에 적용하여 좀 더 나은 서비스를 구축하는 것에
             가장 큰 보람을 느낍니다.
             <br />
-            디자이너, 기획자와 함께 의견을 나누고 고민하며 프로젝트의 시작과
-            끝을 맺은 경험이 있습니다. <br />
+            디자이너, 기획자와 함께 의견을 나누고 고민하며 프로젝트를 만들어본
+            경험이 있습니다. <br />
             가장 좋아하는 것은 작은 컴포넌트 단위로 개발하여 확장성을 높이는
             것이고,
             <br />
@@ -213,6 +213,19 @@ function About() {
 
         <CodeLine>
           <TagContents indent={6}>
+            <p className={styles.italic}>JS</p>
+            <p>- 다양한 메서드에 관해서 공부하고 정리하고 있습니다.</p>
+            <p>
+              - 클래스, 콜백, 프로미스, 클로저를 이해하기 위해 공부하고
+              있습니다.
+            </p>
+          </TagContents>
+        </CodeLine>
+
+        <CodeLine />
+
+        <CodeLine>
+          <TagContents indent={6}>
             <p className={styles.italic}>TypeScript</p>
             <p>
               - 코드 작성 단계에서 타입을 체크해 오류를 확인할 수 있는 정적 타입
@@ -228,19 +241,6 @@ function About() {
             <p className={styles.italic}>Next.js</p>
             <p>
               - Next.js를 활용한 서버 사이드 렌더링에 대해 공부하고 있습니다.
-            </p>
-          </TagContents>
-        </CodeLine>
-
-        <CodeLine />
-
-        <CodeLine>
-          <TagContents indent={6}>
-            <p className={styles.italic}>JS</p>
-            <p>- 다양한 메서드에 관해서 공부하고 정리하고 있습니다.</p>
-            <p>
-              - 클래스, 콜백, 프로미스, 클로저를 이해하기 위해 공부하고
-              있습니다.
             </p>
           </TagContents>
         </CodeLine>
@@ -285,7 +285,16 @@ function About() {
               {"("}2022.05 ~ 2022.06{")"}
             </p>
             <p>
-              - 신규 서비스 메인 페이지, 로그인 페이지 구현 및 유지보수{"("}
+              - 신규 서비스{"("}
+              <a
+                href="https://www.instaget.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                인스타겟
+              </a>
+              {")"} 메인 페이지, 로그인 페이지 구현 및 유지보수
+              {"("}
               기업협업
               {")"}
             </p>

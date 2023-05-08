@@ -1,6 +1,6 @@
 .container {
   width: calc(100vw - (172px + 56px));
-  height: 36px;
+  height: 35px;
   display: flex;
   flex-direction: row;
   color: #ffffff;
@@ -8,6 +8,8 @@
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
   font-weight: 300;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .menuContainer {
@@ -16,7 +18,6 @@
   padding: 8px 16px;
   color: #ffffff;
   border-right: 1px solid var(--tab-boder);
-  border-bottom: 1px solid var(--tab-boder);
 }
 
 .icon {
@@ -29,18 +30,26 @@
   border-top: 1px solid var(--accent-color);
 }
 
-a {
-  text-decoration: none;
+.container::-webkit-scrollbar {
+  height: 15px;
 }
 
-@media screen and (max-width: 768px) {
+.container::-webkit-scrollbar-track {
+  background-color: var(--secondary-bg);
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-bg);
+}
+
+@media (max-width: 800px) {
   .container {
-    width: calc(100vw - 56px);
+    height: 50px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .container {
-    width: 100vw;
+    width: calc(100vw - 56px);
   }
 }

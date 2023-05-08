@@ -53,13 +53,8 @@
   background-color: var(--secondary-bg);
 }
 
-a {
-  text-decoration: none;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .container {
-    width: 0px;
-    border-right: 0px;
+    display: none;
   }
 }

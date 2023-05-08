@@ -1,6 +1,6 @@
 .container {
   width: 56px;
-  height: calc(100vh - (31px + 26px));
+  height: calc(100vh - (30px + 25px));
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,10 +27,4 @@
 
 .select {
   color: #ffffff;
-}
-
-@media (max-width: 640px) {
-  .container {
-    width: 0px;
-  }
 }
