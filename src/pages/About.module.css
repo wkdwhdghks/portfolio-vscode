@@ -1,12 +1,3 @@
-.container {
-  width: calc(100vw - (56px + 172px));
-  height: calc(100vh - (30px + 35px + 25px));
-  background-color: var(--secondary-bg);
-  color: #ffffff;
-  font-family: "JetBrains Mono", monospace;
-  overflow-y: auto;
-}
-
 ::-webkit-scrollbar {
   width: 14px;
 }
@@ -30,16 +21,4 @@
 
 .italic {
   font-style: italic;
-}
-
-@media (max-width: 800px) {
-  .container {
-    height: calc(100vh - (30px + 50px + 25px));
-  }
-}
-
-@media (max-width: 600px) {
-  .container {
-    width: calc(100vw - 56px);
-  }
 }

@@ -27,7 +27,9 @@ function Layout() {
         <Sidebar select={select} handleClick={handleClick} />
         <div>
           <Tabbar select={select} handleClick={handleClick} />
-          <Outlet context={{ handleClick }} />
+          <div className={styles.outletContainer}>
+            <Outlet context={{ handleClick }} />
+          </div>
         </div>
       </div>
       <Footer />

@@ -29,32 +29,28 @@ function Home() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.inner}>
-        <SiVisualstudiocode className={styles.vscode} />
-        <p className={styles.title}>{title}</p>
-        <p className={styles.subtitle}>
-          I'm Markup & Interactive web Developer
-        </p>
-        <div>
-          <button
-            className={styles.button}
-            onClick={() => {
-              navigate("/projects");
-              handleClick("/projects");
-            }}
-          >
-            View Work
-          </button>
-          <button
-            className={styles.button}
-            onClick={() => {
-              navigate("/contact");
-              handleClick("/contact");
-            }}
-          >
-            Contact me
-          </button>
-        </div>
+      <SiVisualstudiocode className={styles.vscode} />
+      <p className={styles.title}>{title}</p>
+      <p className={styles.subtitle}>I'm Markup & Interactive web Developer</p>
+      <div>
+        <button
+          className={styles.button}
+          onClick={() => {
+            navigate("/projects");
+            handleClick("/projects");
+          }}
+        >
+          View Work
+        </button>
+        <button
+          className={styles.button}
+          onClick={() => {
+            navigate("/contact");
+            handleClick("/contact");
+          }}
+        >
+          Contact me
+        </button>
       </div>
     </div>
   );

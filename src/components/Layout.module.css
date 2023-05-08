@@ -1,3 +1,25 @@
 .container {
   display: flex;
 }
+
+.outletContainer {
+  width: calc(100vw - (56px + 172px));
+  height: calc(100vh - (30px + 35px + 25px));
+  padding: 32px;
+  color: #ffffff;
+  background-color: var(--secondary-bg);
+  font-family: "JetBrains Mono", monospace;
+  overflow-y: auto;
+}
+
+@media (max-width: 800px) {
+  .outletContainer {
+    height: calc(100vh - (30px + 50px + 25px));
+  }
+}
+
+@media (max-width: 600px) {
+  .outletContainer {
+    width: calc(100vw - 56px);
+  }
+}
