@@ -10,6 +10,7 @@
   --attributename-text-color: #ae93ea;
   --attributevalue-text-color: #a3c6f4;
   --scrollbar-bg: #333536;
+  --text-color: #efefef;
 }
 
 /* Dracula */
@@ -24,4 +25,5 @@ html.theme {
   --attributename-text-color: #85f789;
   --attributevalue-text-color: #f2f999;
   --scrollbar-bg: #454647;
+  --text-color: #efefef;
 }

@@ -61,6 +61,7 @@
   color: #fff;
   background-color: var(--accent-color);
   border: none;
+  font-weight: bold;
   cursor: pointer;
 }
 

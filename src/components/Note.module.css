@@ -1,0 +1,53 @@
+.note {
+  position: relative;
+  min-height: 15em;
+  padding: 2em 1.5em 2em 5em;
+  color: #252525;
+  background-color: var(--text-color);
+  background-size: 32px 32px;
+  background-image: repeating-linear-gradient(
+    0deg,
+    #e0e0e0,
+    #e0e0e0 1.6px,
+    #efefef 1.6px,
+    #efefef
+  );
+  border-radius: 0 0.5em 0.5em 0;
+}
+
+.circleWrap {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  background-color: transparent;
+  transform: translateX(-50%);
+}
+
+.circleWrap::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -3em;
+  background-color: var(--accent-color);
+}
+
+.circle {
+  width: 1.5em;
+  height: 1.5em;
+  background-color: var(--secondary-bg);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 720px) {
+  .note {
+    font-size: 0.85rem;
+  }
+}

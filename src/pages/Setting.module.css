@@ -1,10 +1,5 @@
 .container {
-  width: calc(100vw - (172px + 56px));
-  height: calc(100vh - (30px + 35px + 25px));
-  padding: 32px;
-  color: #ffffff;
-  background-color: var(--secondary-bg);
-  font-family: "JetBrains Mono", monospace;
+  height: 100%;
 }
 
 .title {
@@ -62,22 +57,5 @@
     flex-direction: column;
     text-align: center;
     gap: 10%;
-  }
-}
-
-@media (max-width: 800px) {
-  .container {
-    height: calc(100vh - (30px + 50px + 25px));
-  }
-
-  .title {
-    font-size: 22px;
-    font-weight: bold;
-  }
-}
-
-@media (max-width: 600px) {
-  .container {
-    width: calc(100vw - 56px);
   }
 }
