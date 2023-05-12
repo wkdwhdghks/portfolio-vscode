@@ -13,7 +13,7 @@ const Blog = () => {
     const getData = async () => {
       try {
         const result = await axios.get(
-          "https://api.rss2json.com/v1/api.json?rss_url=https://wkdwhdghks.tistory.com/rss&api_key=qt9sxql6ldebzwtnjfevtq4l3slg2cdbgm62gv2z"
+          `https://api.rss2json.com/v1/api.json?rss_url=${encoded}&api_key=${apiKey}`
         );
         console.log("Get data!");
         setPost(result.data.items);
