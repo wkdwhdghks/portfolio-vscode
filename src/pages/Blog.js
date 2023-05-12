@@ -23,7 +23,7 @@ const Blog = () => {
             desc.indexOf('data-url="') + 10,
             desc.indexOf('" data-lightbox=')
           );
-          bgUrl.push(`${url}`);
+          return bgUrl.push(`${url}`);
         });
       } catch (error) {
         console.log("Data load failed:" + error);
