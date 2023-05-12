@@ -9,29 +9,28 @@ const Blog = () => {
   const encoded = encodeURIComponent("https://wkdwhdghks.tistory.com/rss");
   const apiKey = process.env.REACT_APP_RSSTOJSON_API_KEY;
 
-  const getData = async () => {
-    try {
-      const result = await axios.get(
-        `https://api.rss2json.com/v1/api.json?rss_url=${encoded}&api_key=${apiKey}`
-      );
-      console.log("Get data!");
-      setPost(result.data.items);
-      result.data.items.map((item) => {
-        const desc = item.description;
-        const url = desc.slice(
-          desc.indexOf('data-url="') + 10,
-          desc.indexOf('" data-lightbox=')
-        );
-        return bgUrl.push(`${url}`);
-      });
-    } catch (error) {
-      console.log("Data load failed:" + error);
-    }
-  };
-
   useEffect(() => {
+    const getData = async () => {
+      try {
+        const result = await axios.get(
+          `https://api.rss2json.com/v1/api.json?rss_url=${encoded}&api_key=${apiKey}`
+        );
+        console.log("Get data!");
+        setPost(result.data.items);
+        result.data.items.map((item) => {
+          const desc = item.description;
+          const url = desc.slice(
+            desc.indexOf('data-url="') + 10,
+            desc.indexOf('" data-lightbox=')
+          );
+          return bgUrl.push(`${url}`);
+        });
+      } catch (error) {
+        console.log("Data load failed:" + error);
+      }
+    };
     getData();
-  }, []);
+  }, [apiKey, bgUrl, encoded]);
 
   return (
     <div>
