@@ -1,0 +1,59 @@
+[
+  {
+    "copy": "personal",
+    "name": "VScode Portfolio",
+    "image": "https://blog.kakaocdn.net/dn/b1zaJS/btseyTmh0aH/IMN16Nu6t1SP8QDpBNLrSK/img.png",
+    "description": "VScode 스타일의 포트폴리오입니다. (2023 ver)",
+    "tags": ["React", "PostCSS", "Axios", "EmailJS-API", "rsstojson-API"],
+    "memo": "https://wkdwhdghks.tistory.com/265",
+    "source_code": "https://github.com/wkdwhdghks/portfolio-vscode",
+    "demo": "https://heeaepark.github.io"
+  },
+  {
+    "copy": "personal",
+    "name": "To-Do list",
+    "image": "https://heeaepark.github.io/myapi/vscode-portfolio-img/port_04.png",
+    "description": "리액트 토이프로젝트 To-Do list App입니다.",
+    "tags": ["React", "Redux", "styled-components", "localstorage", "uuid"],
+    "memo": "https://heeeming.tistory.com/entry/React-Toy-Project-%EB%A6%AC%EC%95%A1%ED%8A%B8-%ED%86%A0%EC%9D%B4%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%85%B8%ED%8A%B8%EC%95%B1Note-App-%EB%A7%8C%EB%93%A4%EA%B8%B0",
+    "source_code": "https://github.com/wkdwhdghks/redux-todolist",
+    "demo": "https://heeaepark.github.io/simple-note/"
+  },
+  {
+    "copy": "company",
+    "name": "HERREN",
+    "image": "https://blog.kakaocdn.net/dn/wJeRR/btseK7KrGpl/VxEVQriq2m5PGSS0wTF6v1/img.png",
+    "description": "헤렌 근무 당시 제작한 SNS 계정관리 솔루션 인스타겟 페이지입니다.",
+    "tags": ["React", "styled-components", "React Router", "Swagger"],
+    "career": "https://flat-beauty-6c6.notion.site/HERREN-ad23b804989049ec9c0ad6bd293c77c4",
+    "demo": "https://www.instaget.com/"
+  },
+  {
+    "copy": "team",
+    "name": "Wesop",
+    "image": "https://blog.kakaocdn.net/dn/qNMRb/btsezrXebKp/IkelZjGlKX7yGQRSxxgxUk/img.png",
+    "description": "wecode bootcamp 당시 제작한 1차 팀 프로젝트 이솝 사이트입니다.",
+    "tags": ["React", "Sass", "React Router"],
+    "memo": "https://wkdwhdghks.tistory.com/263",
+    "source_code": "https://github.com/wkdwhdghks/31-1st-Wesop-frontend",
+    "demo": "https://www.youtube.com/watch?v=BDQ6BGgMt2Q"
+  },
+  {
+    "copy": "team",
+    "name": "Checkout 11AM",
+    "image": "https://blog.kakaocdn.net/dn/RQwzv/btsetHtJ7Cj/k3MeIIeTvgrVoqjcd2uJsK/img.png",
+    "description": "wecode bootcamp 당시 제작한 2차 팀 프로젝트 스테이폴리오 사이트입니다.",
+    "tags": ["React", "styled-components", "React Router", "AWS"],
+    "memo": "https://wkdwhdghks.tistory.com/264",
+    "source_code": "https://github.com/wkdwhdghks/31-2nd-checkout-11AM-frontend",
+    "demo": "https://www.youtube.com/watch?v=c_VUmxRlPv8"
+  },
+  {
+    "copy": "team",
+    "name": "Bottles",
+    "image": "https://blog.kakaocdn.net/dn/btg1Dd/btseyNzq32u/juqo8xlclJvDNKQIkT8yLk/img.png",
+    "description": "멋쟁이사자처럼에서 제작한 최종 팀 프로젝트입니다.",
+    "tags": ["Swift", "SwiftUI", "Firebase"],
+    "demo": "https://apps.apple.com/kr/app/bottles-%EB%B0%94%ED%8B%80%EC%A6%88/id1671470705"
+  }
+]

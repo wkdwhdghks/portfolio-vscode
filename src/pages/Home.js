@@ -1,7 +1,7 @@
-import { SiVisualstudiocode } from "react-icons/si";
-import styles from "./Home.module.css";
 import { useEffect, useState } from "react";
 import { useNavigate, useOutletContext } from "react-router-dom";
+import { SiVisualstudiocode } from "react-icons/si";
+import styles from "./Home.module.css";
 
 function Home() {
   const [title, setTitle] = useState("");
