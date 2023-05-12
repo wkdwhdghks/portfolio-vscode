@@ -13,7 +13,7 @@ const Blog = () => {
     const getData = async () => {
       try {
         const result = await axios.get(
-          `https://api.rss2json.com/v1/api.json?rss_url=${encoded}&api_key=${apiKey}`
+          "https://api.rss2json.com/v1/api.json?rss_url=https://wkdwhdghks.tistory.com/rss&api_key=qt9sxql6ldebzwtnjfevtq4l3slg2cdbgm62gv2z"
         );
         console.log("Get data!");
         setPost(result.data.items);
@@ -23,7 +23,7 @@ const Blog = () => {
             desc.indexOf('data-url="') + 10,
             desc.indexOf('" data-lightbox=')
           );
-          return bgUrl.push(`${url}`);
+          bgUrl.push(`${url}`);
         });
       } catch (error) {
         console.log("Data load failed:" + error);
