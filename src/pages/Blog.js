@@ -15,7 +15,6 @@ const Blog = () => {
         const result = await axios.get(
           `https://api.rss2json.com/v1/api.json?rss_url=${encoded}&api_key=${apiKey}`
         );
-        console.log("Get data!");
         setPost(result.data.items);
         result.data.items.map((item) => {
           const desc = item.description;
