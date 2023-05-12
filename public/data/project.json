@@ -7,17 +7,17 @@
     "tags": ["React", "PostCSS", "Axios", "EmailJS-API", "rsstojson-API"],
     "memo": "https://wkdwhdghks.tistory.com/265",
     "source_code": "https://github.com/wkdwhdghks/portfolio-vscode",
-    "demo": "https://heeaepark.github.io"
+    "demo": "https://effervescent-stardust-e5463b.netlify.app/"
   },
   {
     "copy": "personal",
     "name": "To-Do list",
-    "image": "https://heeaepark.github.io/myapi/vscode-portfolio-img/port_04.png",
+    "image": "https://blog.kakaocdn.net/dn/bu7V8M/btsfcNsfgBi/v3A14YZSPCHqsw2ZNort81/img.png",
     "description": "리액트 토이프로젝트 To-Do list App입니다.",
-    "tags": ["React", "Redux", "styled-components", "localstorage", "uuid"],
-    "memo": "https://heeeming.tistory.com/entry/React-Toy-Project-%EB%A6%AC%EC%95%A1%ED%8A%B8-%ED%86%A0%EC%9D%B4%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%85%B8%ED%8A%B8%EC%95%B1Note-App-%EB%A7%8C%EB%93%A4%EA%B8%B0",
+    "tags": ["React", "PostCSS", "Redux Toolkit", "localstorage", "uuid"],
+    "memo": "https://wkdwhdghks.tistory.com/266",
     "source_code": "https://github.com/wkdwhdghks/redux-todolist",
-    "demo": "https://heeaepark.github.io/simple-note/"
+    "demo": "https://relaxed-chaja-4d60d4.netlify.app/"
   },
   {
     "copy": "company",
