@@ -259,7 +259,7 @@ function About() {
           <p className={styles.accent}>
             📇 경력 {"("}
             <a
-              href="https://flat-beauty-6c6.notion.site/Front-end-developer-a5087929c65a494d89f3a2f84ab5ee1f"
+              href="https://flat-beauty-6c6.notion.site/HERREN-ad23b804989049ec9c0ad6bd293c77c4"
               target="_blank"
               rel="noopener noreferrer"
             >
