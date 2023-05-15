@@ -186,7 +186,7 @@ function About() {
             있습니다.
           </p>
           <p>
-            - PostCSS / styled-components / Scss / Tailwind CSS 모두 사용할 수
+            - PostCSS / styled-components / Sass / Tailwind CSS 모두 사용할 수
             있습니다.
           </p>
           <p>- Redux Toolkit을 사용한 경험이 있습니다.</p>
