@@ -224,8 +224,12 @@ function About() {
         <TagContents indent={6}>
           <p className={styles.italic}>TypeScript</p>
           <p>
-            - 코드 작성 단계에서 타입을 체크해 오류를 확인할 수 있는 정적 타입
-            언어 TypeScript를 공부하고 있습니다.
+            - 느슨한 타입 이슈 방지를 위해 TypeScript 문법을 공부하고 있습니다.
+          </p>
+          <p>
+            - 하지만 강하게 타입스크립트를 사용하지는 않고 Props 등에 타입을
+            지정하여 컴포넌트나 API에 잘못된 타입의 데이터가 유입되지 않도록
+            사전에 방지하는 용도 정도로 활용하고 있습니다.
           </p>
         </TagContents>
       </CodeLine>
@@ -235,7 +239,10 @@ function About() {
       <CodeLine>
         <TagContents indent={6}>
           <p className={styles.italic}>Next.js</p>
-          <p>- Next.js를 활용한 서버 사이드 렌더링에 대해 공부하고 있습니다.</p>
+          <p>
+            - 다이내믹라우팅 / 서버사이드렌더링 등을 위해 Next.js를 공부하고
+            있습니다.
+          </p>
         </TagContents>
       </CodeLine>
 
@@ -287,7 +294,7 @@ function About() {
             >
               인스타겟
             </a>
-            {")"} 메인 페이지, 로그인 페이지 구현 및 유지보수
+            {")"} 구현 및 유지보수
             {"("}
             기업협업
             {")"}
