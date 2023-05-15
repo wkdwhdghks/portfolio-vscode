@@ -186,10 +186,10 @@ function About() {
             있습니다.
           </p>
           <p>
-            - PostCSS / Styled-components / SCSS / Tailwind CSS 모두 사용할 수
+            - PostCSS / styled-components / Scss / Tailwind CSS 모두 사용할 수
             있습니다.
           </p>
-          <p>- Redux toolkit을 사용한 경험이 있습니다.</p>
+          <p>- Redux Toolkit을 사용한 경험이 있습니다.</p>
           <p>
             - axios를 이용하여 API 데이터를 받아와, 컴포넌트에 데이터를 바인딩한
             경험이 있습니다.
