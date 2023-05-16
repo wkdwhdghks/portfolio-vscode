@@ -20,7 +20,7 @@ const socialItems = [
     href: "https://wkdwhdghks.tistory.com/",
   },
   {
-    social: "email",
+    social: "notion",
     link: "jonghwan notion",
     href: "https://flat-beauty-6c6.notion.site/Front-end-developer-a5087929c65a494d89f3a2f84ab5ee1f",
   },
